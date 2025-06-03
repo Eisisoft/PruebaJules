@@ -1,0 +1,19 @@
+# Custom .gitignore for CodeIgniter 3 project
+
+# Ignore specific application sub-directories
+application/cache/
+application/logs/
+
+# Ignore Composer files
+composer.lock
+vendor/
+
+# Ignore the system directory (treat as a framework dependency)
+system/
+
+# Allow the application directory and its contents (already default behavior if not ignored)
+# Explicitly un-ignore to be clear, ensuring sub-rules for cache/logs are respected.
+!application/
+
+# Ensure index.php is tracked
+!index.php

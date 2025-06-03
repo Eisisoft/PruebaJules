@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto; /* Added top/bottom margin */
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px; /* Added border-radius */
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 0; /* Remove default browser margin for consistency */
+}
+
+h2 {
+    border-bottom: 1px solid #eee; /* Added a light border for h2 */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Increased padding */
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold; /* Made th text bold */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Added hover effect for rows */
+}
+
+form div {
+    margin-bottom: 15px; /* Increased margin */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Made labels bold */
+}
+
+input[type="text"],
+input[type="date"], /* Assuming date might be used */
+select,
+textarea {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 4px; /* Added border-radius */
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical; /* Allow vertical resize */
+}
+
+.btn, input[type="submit"] { /* Apply .btn styles to submit inputs */
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em; /* Consistent font size */
+}
+
+input[type="submit"] {
+    width: auto; /* Allow submit button to size to content */
+}
+
+.btn:hover, input[type="submit"]:hover { /* Hover effect for buttons */
+    background-color: #4cae4c;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.btn-default { /* For cancel links styled as buttons */
+    background-color: #777;
+    color: white;
+}
+.btn-default:hover {
+    background-color: #5e5e5e;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text_decoration: underline;
+}
+
+.flash-message { /* Combined flash message styling */
+    padding: 15px; /* Increased padding */
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.flash-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.flash-error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
